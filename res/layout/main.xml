@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       <!-- 用于接受用户的输入 -->
+       <EditText 
+           android:id="@+id/input"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"/>
+       <Button 
+           android:id="@+id/send"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="8px"
+           android:text="@string/send"/>
+   </LinearLayout>
+      <!-- 用于显示来自服务器的信息 -->
+	  <TextView 
+	      android:id="@+id/show"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:gravity="top"
+	      android:background="#ffff"
+	      android:textSize="14dp"
+	      android:textColor="#f000"/>
+</LinearLayout>
